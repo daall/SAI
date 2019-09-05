@@ -69,6 +69,7 @@ egressing
 encap
 enum
 extraparam
+ffff
 fprintf
 functionalities
 hmac
@@ -105,6 +106,7 @@ param
 passparam
 pkts
 policer
+routable
 rv
 rx
 sai

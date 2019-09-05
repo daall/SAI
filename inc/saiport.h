@@ -1196,6 +1196,8 @@ typedef enum _sai_port_attr_t
 
 /**
  * @brief Port counter IDs in sai_get_port_stats() call
+ *
+ * @flags Contains flags
  */
 typedef enum _sai_port_stat_t
 {
@@ -1702,6 +1704,18 @@ typedef enum _sai_port_stat_t
      * This Duration is accumulative since EEE enable on port/from last clear stats.
      */
     SAI_PORT_STAT_EEE_RX_DURATION,
+
+    /** Port stat in drop reasons range start */
+    SAI_PORT_STAT_IN_DROP_REASON_RANGE_BASE = 0x00001000,
+
+    /** Port stat in drop reasons range end */
+    SAI_PORT_STAT_IN_DROP_REASON_RANGE_END = 0x00001fff,
+
+    /** Port stat out drop reasons range start */
+    SAI_PORT_STAT_OUT_DROP_REASON_RANGE_BASE = 0x00002000,
+
+    /** Port stat out drop reasons range end */
+    SAI_PORT_STAT_OUT_DROP_REASON_RANGE_END = 0x00002fff,
 
 } sai_port_stat_t;
 
